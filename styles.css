@@ -1,0 +1,29 @@
+/* Styling the div container*/ 
+body {
+    margin: 0;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+}
+
+.header select{
+    font-size: 1rem;
+}
+.slideshow {
+    flex: 1;
+    background-color: aqua;
+}

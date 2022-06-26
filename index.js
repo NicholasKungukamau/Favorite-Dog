@@ -19,7 +19,7 @@ return `<option>${breed}</option>`
 ` 
 }
 
-//Function to listen our event
+//Function to listen our event when we select dog breed
 async function loadByBreed(breed) {
 if (breed != "Choose Yor Favorite Dog Breed") {
     const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`)
@@ -27,3 +27,5 @@ const data = await response.json()
 console.log(data)
    } 
 }
+
+//
