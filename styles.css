@@ -25,5 +25,18 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .slideshow {
     flex: 1;
-    background-color: aqua;
+    background-color: #333;
+    position: relative;
+}
+
+/* styling div to display images*/
+.slide {
+    position:absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
