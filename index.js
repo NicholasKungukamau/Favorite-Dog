@@ -30,10 +30,26 @@ createSlideShow(data.message)
 
 //Function to Create Slides
 function createSlideShow(images) {
+    let currentPosition = 0
 document.getElementById("slideshow").innerHTML = `
- <div class="slide"
-        style="background-image: url('${images[0]}')">
-        </div>
+ <div class="slide" style="background-image: url('${images[0]}')"> </div>
+  <div class="slide" style="background-image: url('${images[1]}')"> </div>
         `
-
+        currentPosition +=2
+        //Time taken  to show next slide 
+        setInterval(nextSlide, 3000)
+        function nextSlide() {
+            document.getElementById("slideshow").insertAdjacentHTML("beforeend", ` <div class="slide" style="background-image: url('${images[currentPosition]}')"> </div>`)
+//Time to wait before next slide is shown 
+            setTimeout(function(){
+                //reomve shown slide
+                document.querySelector(".slide").remove()
+            }, 1000)
+            //function to allow slides show after each other in looping manner even after last is reached
+            if (currentPosition + 1 >= images.length) {
+                currentPosition = 0;
+            } else {
+                currentPosition++
+            }
+        }
 }

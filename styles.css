@@ -39,4 +39,14 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+transition: all .8s ease-out;
+}
+
+/* */
+.slide:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+
 }
