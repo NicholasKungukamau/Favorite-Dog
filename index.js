@@ -112,8 +112,9 @@ function create(){
 alert("Welcome To Our Club!!");  
 }  
  //modifying login / sign up buttons
+ //log in button
 document.getElementById("loged").style.backgroundColor ="blue";
 document.getElementById("loged").style.color ="white";
-
+//sign up button
 document.getElementById("signed").style.backgroundColor ="green";
 document.getElementById("signed").style.color ="white";
