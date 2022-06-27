@@ -74,3 +74,32 @@ document.getElementById("slideshow").innerHTML = `
             }
         }
 }
+
+// add event listener to review form
+document.addEventListener("DOMContentLoaded", () => {
+
+let form = document.querySelector('form')
+// add event listener to review button
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  submitDetails(document.querySelector('#feedback').value);
+  form.reset();
+});
+});
+//adding event to remove button and styling it
+function submitDetails(rev) {
+let li= document.createElement('li')
+let btn= document.createElement('button');
+btn.addEventListener('click', toDelete);
+btn.textContent= ' Remove';
+btn.style.color ="white";
+btn.style.borderRadius = "12px";
+btn.style.backgroundColor = "red";
+li.textContent= `${rev} `;
+li.appendChild(btn);
+document.querySelector('#reviewed').appendChild(li)
+}
+// dalete reason the user may not want to appear
+function toDelete() {
+  document.querySelector('li').remove();
+};
