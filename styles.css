@@ -12,6 +12,14 @@ justify-content: space-between;
 
 }
 
+/* Insite Message */
+.insite {
+text-align: center;
+    padding-top: 10px;
+color: rgb(39, 204, 18);
+font-size: xx-large;
+}
+
 /* Styling the div container*/ 
 body {
     margin: 0;
