@@ -75,3 +75,18 @@ color: rgb(39, 204, 18);
 font-size: xx-large;
 }
 
+/* Review Form */
+#reviews { 
+    margin-left: 600px;
+    color: white;
+}
+
+#list{
+    margin-left: 600px;
+    color: black;
+}
+.btn {
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+}
