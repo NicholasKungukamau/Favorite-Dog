@@ -39,7 +39,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
 .slideshow {
-    flex: 0.4;
+    flex: 1.0;
     background-color: black;
     position: relative;
     overflow: hidden;
@@ -89,4 +89,9 @@ font-size: xx-large;
     border-radius: 7px;
     background-color: blue;
     color: white;
+}
+
+/*  Documentary  to know more about Dogs */
+#fun{
+    margin-top: 50px ;
 }
