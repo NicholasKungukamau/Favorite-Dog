@@ -103,3 +103,17 @@ document.querySelector('#reviewed').appendChild(li)
 function toDelete() {
   document.querySelector('li').remove();
 };
+
+// Membership form  function
+function submit_form(){  
+alert("Login successfully");  
+}  
+function create(){  
+alert("Welcome To Our Club!!");  
+}  
+ //modifying login / sign up buttons
+document.getElementById("loged").style.backgroundColor ="blue";
+document.getElementById("loged").style.color ="white";
+
+document.getElementById("signed").style.backgroundColor ="green";
+document.getElementById("signed").style.color ="white";
