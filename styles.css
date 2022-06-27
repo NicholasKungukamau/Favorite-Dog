@@ -1,3 +1,17 @@
+
+/* styling Button in Nav Bar */
+#HomeTab {
+    background-color:black;
+color:gold;
+border-radius: 12px;
+font-size: 30px;
+margin-left: 60px; 
+padding-bottom: 10px;
+margin-top: 50px;
+justify-content: space-between;
+
+}
+
 /* Styling the div container*/ 
 body {
     margin: 0;
@@ -14,7 +28,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .header{
     text-align: center;
-    padding: 200px;
+    padding: 20px;
 }
 
 .header h1 {
