@@ -1,4 +1,4 @@
-//Global Scope Variable to
+//Global Scope Variable to show and delete  slide
 let timer
 let deleteFirstPhotoDelay
 
@@ -37,6 +37,8 @@ function createSlideShow(images) {
     let currentPosition = 0
     clearInterval(timer)
     clearTimeout(deleteFirstPhotoDelay) 
+// function to deal with case where we have one image only
+    if (images.length >1) {
 document.getElementById("slideshow").innerHTML = `
  <div class="slide" style="background-image: url('${images[0]}')"> </div>
   <div class="slide" style="background-image: url('${images[1]}')"> </div>
@@ -44,6 +46,12 @@ document.getElementById("slideshow").innerHTML = `
         currentPosition +=2
         //Time taken  to show next slide 
        timer = setInterval(nextSlide, 3000)
+    } else {
+document.getElementById("slideshow").innerHTML = `
+ <div class="slide" style="background-image: url('${images[0]}')"> </div>
+  <div class="slide"> </div>
+        `
+    }
         function nextSlide() {
             document.getElementById("slideshow").insertAdjacentHTML("beforeend", ` <div class="slide" style="background-image: url('${images[currentPosition]}')"> </div>`)
 //Time to wait before next slide is shown 
