@@ -94,4 +94,11 @@ font-size: xx-large;
 /*  Documentary  to know more about Dogs */
 #fun{
     margin-top: 50px ;
+    display: flex;
+}
+
+/* Membership Form */
+#membership{
+    padding-left: 500px;
+    color:black;
 }
