@@ -44,6 +44,8 @@ document.getElementById("slideshow").innerHTML = `
   <div class="slide" style="background-image: url('${images[1]}')"> </div>
         `
         currentPosition +=2
+        //function for case where only two photos are available
+        if (images.length ===2)  currentPosition = 0;
         //Time taken  to show next slide 
        timer = setInterval(nextSlide, 3000)
     } else {
