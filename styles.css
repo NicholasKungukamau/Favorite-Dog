@@ -6,14 +6,15 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .app{
     height: 100%;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    margin-left: 10rem;
 }
 
 .header{
     text-align: center;
-    padding: 20px;
+    padding: 200px;
 }
 
 .header h1 {
@@ -24,8 +25,8 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
 .slideshow {
-    flex: 1;
-    background-color: #333;
+    flex: 0.4;
+    background-color: black;
     position: relative;
     overflow: hidden;
 }
@@ -45,7 +46,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 transition: all .9s ease-out;
 }
 
-/* */
+/* show last image when first is deleted*/
 .slide:nth-last-child(2) {
     opacity: 1;
     transform: scale(1.08);
