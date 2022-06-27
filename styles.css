@@ -1,4 +1,6 @@
-
+body{
+    background-color: brown;
+}
 /* styling Button in Nav Bar */
 #HomeTab {
     background-color:black;
@@ -67,18 +69,23 @@ transition: all .9s ease-out;
 
 }
 
+#rest {
+    
+
+}
+
 /* Insite Message */
 .insite {
 text-align: center;
     padding-top: 10px;
-color: rgb(39, 204, 18);
+color: black;
 font-size: xx-large;
 }
 
 /* Review Form */
 #reviews { 
     margin-left: 600px;
-    color: white;
+    color: black;
 }
 
 #list{
@@ -150,3 +157,4 @@ padding-left: 500px;
     padding-left: 550px;
     font-size: large;
 }
+
